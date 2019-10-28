@@ -1,0 +1,87 @@
+.curvy{
+  background-color: rgba(50, 61, 74, 0.2);
+  position: relative;
+  &.row{
+    padding: 0 10px;
+    @include tablet {
+      padding: 20px;
+    }
+  }
+}
+.curvy {
+  &:before {
+    background-image:url(#{$images}/html5/curves/curve-top.svg);
+    top: -130px;
+  }
+  &.scaleDown{
+    &:before {
+      top: -80px;
+    }
+  }
+}
+.curvy {
+  &:after {
+    background-image: url(#{$images}/html5/curves/curve-bottom.svg);
+    bottom: -130px;
+    background-size: 100% 80% !important;
+  }
+  &.scaleDown{
+    &:after {
+      bottom: -80px;
+    }
+  }
+}
+.curvy:before, .curvy:after {
+    visibility: visible;
+    content: "";
+    width: 100%;
+    height: 130px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 105%;
+    // background-size: cover;
+    position: absolute;
+    left: 0;
+}
+.scaleDown:before, .scaleDown:after {
+    height: 80px;
+}
+  .curvy-reverse{
+    &:before {
+      top: -110px;
+      background-image: url(#{$images}/html5/curves/curve-bottom2.svg);
+      height: 110px;
+    }
+    &.scaleDown{
+      &:before {
+        top: -80px;
+        height: 80px;
+      }
+    }
+  }
+  .curvy-reverse{
+    &:after {
+      background-image:url(#{$images}/html5/curves/curve-top-reverse.svg);
+      bottom: -130px;
+    }
+    &.scaleDown{
+      &:after {
+        bottom: -80px;
+      }
+    }
+  }
+
+
+.vertical-align{
+  display: flex;
+  align-items: center;
+  position: relative;
+  &:not(.curvy){
+    padding: 100px 0px !important;
+    &.scaleDown{
+      padding: 70px 0px !important;
+    }
+  }
+
+}

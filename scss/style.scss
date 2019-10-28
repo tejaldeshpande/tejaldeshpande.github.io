@@ -1,0 +1,103 @@
+@import "variables";
+
+//@import url('https://fonts.googleapis.com/css?family=Cookie|Raleway:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cookie|Roboto:300,400,700&display=swap');
+
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #333;
+  font-size: 20px;
+  width: 100vw;
+}
+
+.header-bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.header-bar2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 5px;
+  background-image: -webkit-linear-gradient(left, #da7800, #8c0091, #00b4da, #000b91);
+    background-image: -moz-linear-gradient(left, #da7800, #8c0091, #00b4da, #000b91);
+    background-image: -o-linear-gradient(left, #da7800, #8c0091, #00b4da, #000b91);
+    background-image: linear-gradient(to right, #da7800, #8c0091, #00b4da, #000b91);
+}
+.gradient{
+  background: rgb(0,11,145);
+  background: -moz-linear-gradient(0deg, rgba(0,11,145,1) 0%, rgba(44,120,186,1) 48%, rgba(0,180,218,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(0,11,145,1) 0%, rgba(44,120,186,1) 48%, rgba(0,180,218,1) 100%);
+  background: linear-gradient(0deg, rgba(0,11,145,1) 0%, rgba(44,120,186,1) 48%, rgba(0,180,218,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000b91",endColorstr="#00b4da",GradientType=1);
+
+  padding: 50px;
+  color: white;
+}
+
+.header{
+  padding: 100px;
+  font-size: 2em;
+  font-weight: bold;
+  margin: auto;
+  position: relative;
+  text-align: center;
+    .header-img{
+    //  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.3);
+    margin: auto;
+    }
+
+}
+
+.header-content{
+  max-width: 920px;
+  margin: auto;
+
+  .header-text{
+    max-width:400px;
+    @media (max-width: $desktop) {
+      max-width: none;
+      padding-bottom: 40px;
+    }
+  }
+}
+
+.purple{color: $purple;}
+.orange{color: $orange;}
+.pink{color: $pink;}
+
+.vertical-align{
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  @media (max-width: $desktop) {
+    display: block;
+  }
+}
+
+.curvy:before, .curvy:after {
+    visibility: visible;
+    content: "";
+    width: 100vw;
+    height: 35px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+    position: absolute;
+    left:0px;
+}
+
+.curvy:after {
+    background-image: url(../images/wave-top.svg);
+    bottom: -35px;
+}
+
+//font-family: 'Cookie', cursive;
