@@ -11,6 +11,10 @@ body{
   font-size: 20px;
   background: #fbfbfc;
   overflow-x: hidden;
+
+  @media (max-width: $desktop) {
+    font-size: 28px;
+  }
 }
 
 .header-bar{
@@ -58,6 +62,7 @@ body{
 
   .header-text{
     max-width:400px;
+    margin: 0 auto;
     @media (max-width: $desktop) {
       max-width: none;
       padding-bottom: 40px;
@@ -131,4 +136,5 @@ body{
   width: 470px;
   margin: 0 auto;
   display: block;
+  padding: 30px 0;
 }
