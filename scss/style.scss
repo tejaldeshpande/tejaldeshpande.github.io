@@ -79,10 +79,10 @@ body{
   }
 }
 .section{
-  padding: 50px;
+  padding: 70px;
 }
 .section:not(.curvy){
-  padding: 70px;
+  padding: 100px 70px;
 }
 
 .curvy:before, .curvy:after {
@@ -118,9 +118,7 @@ body{
 .curvy:not(.header){
   background-color: rgba(50, 61, 74, 0.2);
   position: relative;
-  &.row{
-    padding: 0 10px;
-  }
+
 }
 
 .title{
