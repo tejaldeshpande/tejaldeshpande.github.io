@@ -38,6 +38,14 @@ body {
   background: linear-gradient(0deg, #005073 0%, #52b6b8 37.25%, #57c4ea 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#57C4EA",endColorstr="#005073" , GradientType=0);
   color: white;
+  background: -moz-linear-gradient(50% 100% 90deg, #57c4ea 0%, #52b6b8 62.75%, #1c6382 100%);
+  background: -webkit-linear-gradient(90deg, #57c4ea 0%, #52b6b8 62.75%, #1c6382 100%);
+  background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0, #57c4ea), color-stop(0.6275, #52b6b8), color-stop(1, #1c6382));
+  background: -o-linear-gradient(90deg, #57c4ea 0%, #52b6b8 62.75%, #1c6382 100%);
+  background: -ms-linear-gradient(90deg, #57c4ea 0%, #52b6b8 62.75%, #1c6382 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#57C4EA', endColorstr='#1C6382' ,GradientType=0)";
+  background: linear-gradient(0deg, #57c4ea 0%, #52b6b8 62.75%, #1c6382 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1C6382",endColorstr="#57C4EA" , GradientType=0);
 }
 
 .header {
