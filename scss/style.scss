@@ -13,7 +13,7 @@ body{
   overflow-x: hidden;
 
   @media (max-width: $desktop) {
-    font-size: 28px;
+    font-size: 34px;
   }
 }
 
@@ -131,7 +131,6 @@ body{
 
 .header:after {
     background-image: url(../images/wave-bottom2.svg);
-    bottom: -35px;
 }
 
 .curvy:not(.header){
