@@ -5,7 +5,7 @@ body {
   font-weight: 300;
   color: #333;
   font-size: 20px;
-  background: #fbfbfc;
+  background: #efefef;
   overflow-x: hidden;
 }
 @media (max-width: 991px) {
@@ -121,7 +121,6 @@ body {
 
 .curvy:before {
   background-image: url(../images/wave-top.svg);
-  background-size: cover;
   top: -35px;
 }
 .curvy:after {
@@ -130,7 +129,7 @@ body {
 }
 
 .header:after {
-  background-image: url(../images/wave-bottom-white.svg);
+  background-image: url(../images/wave-bottom2.svg);
   bottom: -35px;
 }
 
