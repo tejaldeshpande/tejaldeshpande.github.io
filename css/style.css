@@ -19,7 +19,7 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 5px;
+  height: 0.25em;
   margin-top: 8px;
   background-image: -webkit-linear-gradient(left, #da7800, #8c0091, #00b4da, #000b91);
   background-image: -moz-linear-gradient(left, #da7800, #8c0091, #00b4da, #000b91);
@@ -126,6 +126,11 @@ body {
 .curvy:after {
   background-image: url(../images/wave-bottom.svg);
   bottom: -35px;
+}
+@media (max-width: 991px) {
+  .curvy:after {
+    background-size: cover;
+  }
 }
 
 .header:after {
